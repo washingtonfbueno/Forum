@@ -17,4 +17,5 @@ What needs to be implemented:
 
 
 - Creating account:\
+\
 ![Model](https://i.imgur.com/9BORsvF.png)
