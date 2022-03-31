@@ -13,8 +13,7 @@ What needs to be implemented:
 - Password recovering function with email
 - Change password function
 - Emojis
-- And other more stuffs
+- And other more stuffs<br/>
 
-
-- Creating account:
+- Creating account:<br/>
 ![Model](https://i.imgur.com/9BORsvF.png)
