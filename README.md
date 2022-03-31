@@ -15,4 +15,6 @@ What needs to be implemented:
 - Emojis
 - And other more stuffs
 
-![Screenshot]
+
+- Creating account:
+![Model]https://prnt.sc/n64UWJWTjFvY
