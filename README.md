@@ -18,4 +18,4 @@ What needs to be implemented:
 
 - Creating account:
 <br/>
-- ![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/9BORsvF.png)
