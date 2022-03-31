@@ -17,4 +17,4 @@ What needs to be implemented:
 
 
 - Creating account:
-![ez cv logo](https://prnt.sc/n64UWJWTjFvY)
+![Creating account](https://imgur.com/9BORsvF)
