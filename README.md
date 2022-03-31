@@ -17,4 +17,4 @@ What needs to be implemented:
 
 
 - Creating account:
-![Model](https://prnt.sc/n64UWJWTjFvY)
+![ez cv logo](https://prnt.sc/n64UWJWTjFvY)
