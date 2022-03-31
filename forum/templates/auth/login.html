@@ -1,0 +1,67 @@
+{% extends 'auth/base.html' %}
+
+{% block head %}
+<title>Login</title>
+
+{% endblock head %}
+
+{% block content %}
+<div class="text-blue-400 mb-3 text-4xl text-center mb-10">Login</div>
+<form class="flex flex-col" method="POST">
+
+    <div class="flex flex-row md:space-x-5 justify-center">
+        <div class="hidden md:flex md:flex-col space-y-2">
+            <div class="flex items-center py-2">Login</div>
+            <div class="flex items-center py-2">Password</div>
+        </div>
+
+        <div class="space-y-2">
+            <div class="flex items-center justify-center outline outline-1 outline-gray-500 rounded-lg pl-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clip-rule="evenodd" />
+                </svg><input class="pl-2 py-2" type="text" name="login" placeholder="Login">
+            </div>
+
+
+            <div class="flex items-center justify-center outline outline-1 outline-gray-500 rounded-lg pl-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clip-rule="evenodd" />
+                </svg><input class="pl-2 py-2" type="password" name="password" placeholder="Password">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <button class="bg-blue-400 mt-5 py-2 rounded-md text-gray-100 text-lg hover:bg-blue-500"
+        type="submit">Login</button>
+
+    <div class="mt-5 self-center">
+        <p>Don't have an account? <a class="underline" href="{{url_for('auth.register')}}">Sign
+                up!</a> </p>
+        <p>Go back to <a class="underline" href="{{url_for('forum.index', page=1)}}">home page</a></p>
+
+        <div class="mt-5 max-w-fit">{% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            {% if category == 'success' %}
+            <p class="bg-emerald-600 py-2 px-2 text-center text-gray-100 rounded-lg">{{message}}</p>
+            {% else %}
+            <p class="bg-red-500 py-2 px-2 text-center text-gray-100 rounded-lg">{{message}}</p>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+        </div>
+    </div>
+
+
+
+</form>
+
+{% endblock content %}

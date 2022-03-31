@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>New thread</title>
+{% endblock head %}
+
+{% block content %}
+<div class="flex justify-center align-center py-20">
+    <form method="POST" class="flex flex-col w-11/12 xl:w-6/12">
+        <div class="flex bg-gray-700 rounded-t-lg py-4 px-5 text-gray-100">
+            <div>Subject</div>
+        </div>
+        <input class="pl-5 py-2" type="text" name="thread_subject" placeholder="Subject" minlength="10" maxlength="40"
+            required>
+        <textarea class="pl-5 py-2 mt-4" name="thread_text" cols="40" rows="5" minlength="10" maxlength="600"
+            required></textarea>
+
+        <button class="flex space-x-2 mt-5 bg-gray-700 px-5 py-2 max-w-fit rounded-lg hover:bg-gray-800 text-gray-100"
+            type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+            <p>Create thread</p>
+        </button>
+
+    </form>
+
+</div>
+{% endblock content %}

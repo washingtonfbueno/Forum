@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>My threads</title>
+{% endblock head %}
+
+{% block content %}
+<div class="flex justify-center align-center py-20">
+    <div class="flex flex-col w-11/12 xl:w-6/12">
+        <div class="flex pl-5 pr-10 py-4 bg-gray-700 rounded-t-lg text-gray-100">
+            <div>My threads</div>
+        </div>
+
+        {% if threads %}
+        <div class="flex flex-col space-y-1">
+            {% for thread_id, thread_subject, thread_posts in threads %}
+            <div class="flex pl-5 pr-10 py-2 bg-white space-x-5">
+                <div class="self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                </div>
+
+                <a class="self-center break-all hover:underline"
+                    href="{{url_for('forum.thread', thread_id=thread_id, page=1)}}">{{thread_subject}}</a>
+
+                <div class="flex flex-grow justify-end">
+                    <ul>
+                        <li>{{thread_posts}} posts</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            {% endfor %}
+
+        </div>
+
+
+        <div class="bg-white mt-5 py-2 pl-5 pr-10">
+            Pages: {% for p in range(1, pages+1) %}
+            {% if p == page %}
+            <a class="underline" href="{{url_for('forum.my_threads', page=p)}}">{{p}}</a>
+            {% else %}
+            <a href="{{url_for('forum.my_threads', page=p)}}">{{p}}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

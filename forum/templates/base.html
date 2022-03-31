@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: content-box;
+            background-repeat: no-repeat;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:focus {
+            transition: background-color 600000s 0s, color 600000s 0s;
+        }
+
+        input[data-autocompleted] {
+            background-color: transparent !important;
+        }
+    </style>
+    {% block head %}{% endblock head %}
+</head>
+
+<body class="bg-slate-500">
+    <nav class="flex bg-gray-700 py-5 px-7">
+        <div class="text-slate-200 space-x-4">
+            <a class="hover:underline" href="{{url_for('forum.index', page=1)}}">Home</a>
+            {% if current_user.is_authenticated %}
+            <a class="hover:underline" href="{{url_for('forum.profile')}}">Profile</a>
+            <a class="hover:underline" href="{{url_for('forum.my_threads', page=1)}}">My threads</a>
+            {% endif %}
+        </div>
+
+        <div class="flex-grow text-right text-slate-200 space-x-4">
+            {% if not current_user.is_authenticated %}
+            <a class="bg-slate-500 rounded-lg px-4 py-1 hover:bg-slate-400" href="{{url_for('auth.login')}}">Login</a>
+            <a class="bg-slate-500 rounded-lg px-4 py-1 hover:bg-slate-400"
+                href="{{url_for('auth.register')}}">Register</a>
+            {% else %}
+            <a class="bg-slate-500 rounded-lg px-4 py-1 hover:bg-slate-400" href="{{url_for('auth.logout')}}">Log
+                out</a>
+            {% endif %}
+        </div>
+    </nav>
+    {% block content %}{% endblock content %}
+</body>
+
+</html>

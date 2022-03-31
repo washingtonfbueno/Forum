@@ -1,0 +1,15 @@
+{% extends 'auth/base.html' %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+
+{% if get_flashed_messages() %}
+{% for msg in get_flashed_messages() %}
+<p>{{msg}}
+    {% endfor %}
+    {% endif %}go to the <a class="underline" href="{{url_for('forum.index', page=1)}}">home page.</a>
+</p>
+{% endblock content %}

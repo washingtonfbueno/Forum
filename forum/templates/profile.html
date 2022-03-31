@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Profile</title>
+{% endblock head %}
+
+{% block content %}
+<div class="flex justify-center align-center py-20">
+    <div class="flex flex-col w-11/12 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+        <div class="flex pl-5 pr-10 py-4 bg-gray-700 rounded-t-lg text-gray-100">
+            Profile
+        </div>
+
+        <div class="flex pl-5 pr-10 pt-5 pb-10 bg-white space-x-10 align-center flex-col md:flex-row">
+
+            <ul class="w-32 space-y-2 mb-5 self-center md:self-start">
+                <li class="text-center">{{name}}</li>
+                <li><img src="{{avatar_url}}"></li>
+            </ul>
+
+            <form method="POST">
+                <div>
+                    <ul class="space-y-2">
+                        <li class="space-y-1">
+                            <p>Change user name</p>
+                            <div class="items-center justify-center outline outline-1 outline-gray-500">
+                                <input class="px-5 py-1" type="text" name="name" value="{{name}}"
+                                    placeholder="Enter a new user name" minlength="2" maxlength="12" required>
+                            </div>
+                        </li>
+
+                        <li class="space-y-1">
+                            <p>Change avatar</p>
+                            <div class="items-center justify-center outline outline-1 outline-gray-500">
+                                <input class="px-5 py-1" type="url" name="avatar_url"
+                                    placeholder="Enter a valid url link">
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <button
+                        class="space-x-2 bg-gray-700 mt-5 px-5 py-1 max-w-fit rounded-md hover:bg-gray-800 text-gray-100"
+                        type="submit">
+                        Apply changes
+                    </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>
+{% endblock content %}

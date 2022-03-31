@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: content-box;
+            background-repeat: no-repeat;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:focus {
+            transition: background-color 600000s 0s, color 600000s 0s;
+        }
+
+        input[data-autocompleted] {
+            background-color: transparent !important;
+        }
+    </style>
+    {% block head %}{% endblock head %}
+</head>
+
+<body class="flex justify-center items-center h-screen bg-blue-200">
+
+    <div class="flex flex-col px-10 py-10 justify-center items-center bg-white shadow-xl">
+        {% block
+        content
+        %}{%
+        endblock
+        content
+        %}
+    </div>
+
+</body>
+
+</html>
