@@ -1,5 +1,5 @@
 # Forum
-This is a simple forum created with Python, Flask, SQLite, Flask-Login, HTML, CSS and Tailwind CSS. It's purpose is learning purpose!<br/><br/>
+This is a simple forum created with Python, Flask, SQLite, Flask-Login, HTML and Tailwind CSS. It's purpose is learning purpose!<br/><br/>
 
 What this forum web app brings:
 - It's design is responsive on mobile devices
