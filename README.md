@@ -20,25 +20,25 @@ What needs to be implemented:
 <br/>
 
 - Logging in:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/QTM2QjH.png)
 <br/>
 
 - Creating threads:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/1onSCye.png)
 <br/>
 
 - Threads:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/fkdV0sK.png)
 <br/>
 
 - Making posts:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/xbQO8JG.png)
 <br/>
 
 - Posts:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/TDb5rLP.png)
 <br/>
 
 - Changing user name and avatar:<br/><br/>
-![Model](https://i.imgur.com/9BORsvF.png)
+![Model](https://i.imgur.com/i0ca2AK.png)
 <br/>
