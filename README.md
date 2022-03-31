@@ -17,3 +17,28 @@ What needs to be implemented:
 
 - Creating account:<br/><br/>
 ![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Logging in:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Creating threads:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Threads:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Making posts:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Posts:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
+
+- Changing user name and avatar:<br/><br/>
+![Model](https://i.imgur.com/9BORsvF.png)
+<br/>
