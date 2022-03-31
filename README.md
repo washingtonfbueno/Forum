@@ -15,6 +15,4 @@ What needs to be implemented:
 - Emojis
 - And other more stuffs
 
-- Creating account:
-
-![Model](https://i.imgur.com/9BORsvF.png)
+- Creating account:![Model](https://i.imgur.com/9BORsvF.png)
