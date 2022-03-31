@@ -13,7 +13,6 @@ What needs to be implemented:
 - Password recovering function with email
 - Change password function
 - Emojis
-- Roles and admin permissions panel
 - And other more stuffs
 
 ![Screenshot]
