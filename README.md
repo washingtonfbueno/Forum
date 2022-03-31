@@ -14,6 +14,8 @@ What needs to be implemented:
 - Change password function
 - Emojis
 - And other more stuffs
-
+<br/>
+<br/>
+<br/>
 - Creating account:
 - ![Model](https://i.imgur.com/9BORsvF.png)
