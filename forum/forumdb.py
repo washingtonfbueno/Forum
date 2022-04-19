@@ -19,7 +19,7 @@ class ForumDatabase:
         self.cursor.executescript("""CREATE TABLE users(
                                         user_id INTEGER PRIMARY KEY AUTOINCREMENT,
                                         name TEXT,
-                                        avatar_url,
+                                        avatar_url TEXT,
                                         login TEXT,
                                         password TEXT);
                             
